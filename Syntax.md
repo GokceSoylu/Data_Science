@@ -30,7 +30,14 @@ birde bunların hangi tipte olduklarını anlamammızı saglayan type() fonksiyo
     print(type(h))
 ````
 output
-
+class 'int'
+class 'float'
+class 'str'
+class 'list'
+class 'list'
+class 'tuple'
+class 'dict'
+class 'bool'
 
 ### Yazdırma
 print() fonksiyonu kullanılır. String yazdırmak için "içine" istenilen string yazılır.
