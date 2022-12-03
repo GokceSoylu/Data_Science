@@ -7,6 +7,33 @@ komutların sonuna ; konulmaz
 print fonksiyı-onu için kütüphaneye ihtiyaç yoktur
 yorum satırı için # kullanılır
 / işareti ile bölme yaptığımızda float bölme yapar. int bölme yapmak için // işaretini kullanmalıyız
+
+### Yazdırma
+print() fonksiyonu kullanılır. String yazdırmak için "içine" istenilen string yazılır.
+````python
+    print("hello World!)
+````
+%d %f gibi referanslara ihtiyaç yoktur. Bunun yanık sıra println deki gibi, ifadeler türler arasına + koymayada gerek yok. virgül yeterli
+````python   
+    print("mehmet")
+    print(25)
+    print("mehmet",25,"yasinda")
+````
+> sep fonksiyonu 
+normalde print() virgül ile ayırdığımız ifadeler arasına boşluk koyarak yazdırır. set fonksiyonu kullanarak biz bunu değiştirebiliriz.
+````python
+    print("hasan","yalova'da","yasiyor")
+    print("hasan","yalova'da","yasiyor",sep="*")
+````
+output
+hasan yalova'da yasiyor
+hasan*yalova'da*yasiyor
+işte separete(boşluk)yerine bunu kullan demiş oluyoruz.
+>.format fonsiyonu
+bir nevi %d %f refaranslarına andırıyor.
+````python
+    print("{}+{} = {}".format(12,17,12+17))
+````
 ### Veri tipleri
 integer, float, String gibi veri tipleri burada da var, ancak değişkenler tanımlanırken değiken tipi başına yazlımaz :))
 ````python
@@ -68,29 +95,29 @@ yapabiliriz. peki ya / ve - işaretleri? Abartma o kadar değil :))
     h=e+f
     h*=3
     print(d,h)
-````
-### Yazdırma
-print() fonksiyonu kullanılır. String yazdırmak için "içine" istenilen string yazılır.
-````python
-    print("hello World!)
-````
-%d %f gibi referanslara ihtiyaç yoktur. Bunun yanık sıra println deki gibi, ifadeler türler arasına + koymayada gerek yok. virgül yeterli
-````python   
-    print("mehmet")
-    print(25)
-    print("mehmet",25,"yasinda")
-````
-> sep fonksiyonu 
-normalde print() virgül ile ayırdığımız ifadeler arasına boşluk koyarak yazdırır. set fonksiyonu kullanarak biz bunu değiştirebiliriz.
-````python
-    print("hasan","yalova'da","yasiyor")
-    print("hasan","yalova'da","yasiyor",sep="*")
+    print("*"*10)
 ````
 output
-hasan yalova'da yasiyor
-hasan*yalova'da*yasiyor
-işte separete(boşluk)yerine bunu kullan demiş oluyoruz.
->.format fonsiyonu
-bir nevi %d %f refaranslarına andırıyor.
+hasanpasa besiktasbesiktasbesiktas
+**********
+bekle bekle asıl kral haraket şimdi geliyo
 ````python
-    print("{}+{} = {}".format(12,17,12+17))
+    b="hasan"
+    c="pasa\n" #dikkat
+    d=a+b
+    e="besik"
+    f="tas\n"
+    h=e+f
+    h*=3
+    print(d,h)
+    print("*"*10)
+````
+output
+hasanpasa
+ besiktas
+besiktas
+besiktas
+
+**********
+stringin kendi içerisine \n new line komutu eklebildik. Şimdi dikkat edelim tüm çıktılar aynı hizzadayken ilk beşiktaş yazısı bir 
+space önde. çünkü + işareti kullandığımızda aralara default olarak space koyar :))  

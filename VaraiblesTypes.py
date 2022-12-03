@@ -23,3 +23,4 @@ e=d/2
 print(c)
 print(d)
 print(e)
+
