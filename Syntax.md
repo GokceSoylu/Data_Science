@@ -144,8 +144,29 @@ Stringi yazdırırken de for kullanmadan yazdırmanın kolaylıgı var [] içeri
     print(a[2:5])# 2-5 arası yazdırır [2,5)
     print(a[2:])# 2 den stringin sonuna kadar yazdırır [2,5]
     print(a[:3])#bastan 3. elemana kadar kadar yazdırır [0,3)
-`````
+````
 output
 tho
 thon
 pyts
+
+: işareti sana bir şeyi hatırlattı mı? evet for :) for(;;) aynı olay burada da var bakalım
+````python
+a="1234567"
+    print(a[2:5:2])
+    print(a[:5:2])
+    print(a[::2])
+    print(a[:])
+    print(a[::])
+    print(a[::])
+````
+output
+35
+135
+1357
+1234567
+1234567
+1234567
+
+### Liste
+Yani hem liste hemde c java gibi dillerdeki dizi.
