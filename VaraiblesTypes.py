@@ -14,3 +14,12 @@ print(type(e))
 print(type(f))
 print(type(g))
 print(type(h))
+print()
+a=10
+b=4
+c=a/b
+d=a//b
+e=d/2
+print(c)
+print(d)
+print(e)
