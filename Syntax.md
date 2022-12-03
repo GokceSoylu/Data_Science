@@ -1,6 +1,6 @@
-## Python genel bakış
+# Python genel bakış
 
-### Ön bilgi
+## Ön bilgi
 Tebrik ederim başarılar dilerim:))
 Hocam öncelikle c/c++/java yazdıktan sonra python a geçişi biraz zor olabilir. genel özelliklerinden bahsedelim
 komutların sonuna ; konulmaz
@@ -8,7 +8,7 @@ print fonksiyı-onu için kütüphaneye ihtiyaç yoktur
 yorum satırı için # kullanılır
 / işareti ile bölme yaptığımızda float bölme yapar. int bölme yapmak için // işaretini kullanmalıyız
 
-### Yazdırma
+## Yazdırma
 print() fonksiyonu kullanılır. String yazdırmak için "içine" istenilen string yazılır.
 ````python
     print("hello World!)
@@ -34,7 +34,7 @@ bir nevi %d %f refaranslarına andırıyor.
 ````python
     print("{}+{} = {}".format(12,17,12+17))
 ````
-### Veri tipleri
+## Veri tipleri
 integer, float, String gibi veri tipleri burada da var, ancak değişkenler tanımlanırken değiken tipi başına yazlımaz :))
 ````python
     a=10
@@ -66,7 +66,7 @@ class 'list'
 class 'tuple'
 class 'dict'
 class 'bool'
-> integer ve float
+### integer ve float
 bunlaral alakalı çokta farklı bir şey bir aritmatik kısmında python / işaretir float bölme yapar, tam bölme için // işaretinin 
 kullanırız. Float bölme dediğimiz c yada java daki gibi rakam rakam yazdırmak değildir. virgülden sonrai kısmı yuvarlar :))
 ````python
@@ -83,7 +83,7 @@ output
 2.5
 2
 1.0
-> String
+### String
 elma+elma evet python'da iki elma yapar :)). String birleştirmeyi direkt + ile yaapbiliriz. hatta * kullanarak bir stringi multiple 
 yapabiliriz. peki ya / ve - işaretleri? Abartma o kadar değil :))
 ````python
@@ -120,4 +120,32 @@ besiktas
 
 **********
 stringin kendi içerisine \n new line komutu eklebildik. Şimdi dikkat edelim tüm çıktılar aynı hizzadayken ilk beşiktaş yazısı bir 
-space önde. çünkü + işareti kullandığımızda aralara default olarak space koyar :))  
+space önde. çünkü , (virgül) işareti kullandığımızda aralara default olarak space koyar :))  
+
+Hocam biliyorsun java da ayrı string tipi olduğu için cahr[] dizisi gibi olmuyors-du ve imündis indis ulaşana kadar karnımız çatlıyordu.
+Ancak burada öyle değil. Python yine kolay yolu seçmiş ve stringler char dizisi gibidir yani index index kolaylıkkla ulaşılabilir. 
+Yine java daki length fonsiyonu burada da var.len() şeklinde
+````python
+    a="hammal"
+    print(len(a))
+    print(a[0])
+    print(a[5]+"="+a[len(a)-1])# o değilde + yı da kabul etti :))
+    print(a[5],"=",a[len(a)-1])
+````
+output
+6
+h
+l=l
+l = ls
+
+Stringi yazdırırken de for kullanmadan yazdırmanın kolaylıgı var [] içerisine : işereti ile istegimiz değer aralıgını yazdırıyoruz
+````python
+    a="python"
+    print(a[2:5])# 2-5 arası yazdırır [2,5)
+    print(a[2:])# 2 den stringin sonuna kadar yazdırır [2,5]
+    print(a[:3])#bastan 3. elemana kadar kadar yazdırır [0,3)
+`````
+output
+tho
+thon
+pyts
