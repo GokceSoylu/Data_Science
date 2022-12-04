@@ -17,7 +17,6 @@ t5=tuple()
 
 # mine indis te kullanabiliriz bu tuple a has bir özellik değil bunu listed e yapabilriz -1 son eleman olmak üzere sondan bir onceki -2 olur
 #yine for gibi yazdırırdık ya[::] bu tuple da da geçerli
-t
 print(t[-3])
 print(t[-5:-2:1]) 
 print(t[-1:-5:-1]) 
